@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroma & Artisan Cafe | Premium Coffee & Bakery</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <i class="fa-solid fa-mug-hot"></i>
+        Aroma <span>&</span> Artisan
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#offers" class="nav-link">Offers</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reservation" class="nav-link">Reservation</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartToggle" aria-label="Shopping Cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <a href="#reservation" class="btn btn-primary btn-sm hide-mobile">Book Table</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-subtitle">Affordable Luxury in Every Sip</span>
+      <h1 class="hero-title">Crafted Fresh Daily For Your Perfect Moments</h1>
+      <p class="hero-desc">Discover ethically sourced artisanal coffee, freshly baked french pastries, and handcrafted treats at affordable prices right in town.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary btn-lg">Explore Menu</a>
+        <a href="#reservation" class="btn btn-outline btn-lg">Book Table</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-lbl">Organic Beans</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3,500+</span>
+          <span class="stat-lbl">MMK Entry Price</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4.9 ★</span>
+          <span class="stat-lbl">Customer Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-box">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Barista pouring latte art" class="about-img-main">
+          <div class="about-badge">
+            <span class="badge-num">5+</span>
+            <span class="badge-txt">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">Our Story & Craft</span>
+          <h2 class="section-title">Where Passion Meets Affordability</h2>
+          <p class="about-text">At Aroma & Artisan, we believe high-quality coffee and delightful pastries shouldn't carry a luxury price tag. Founded with a vision to bring premium, ethically sourced coffee to coffee lovers, we roast our beans to perfection and bake everything fresh daily.</p>
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+              <div>
+                <h4>Direct-Trade Beans</h4>
+                <p>Sourced directly from sustainable local and global mountain farms.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-bread-slice"></i></div>
+              <div>
+                <h4>Freshly Baked Daily</h4>
+                <p>Our pastry chefs start at 4:00 AM every morning for hot, flaky treats.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+              <div>
+                <h4>Fair & Fairer Prices</h4>
+                <p>Enjoy premium handcrafted coffee starting from only 3,500 MMK.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section class="menu section-padding" id="menu">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Handcrafted Offerings</span>
+        <h2 class="section-title">Our Affordably Priced Menu</h2>
+        <p class="section-subtitle">Select from our signature brews, refreshing cold drinks, and oven-fresh bakery items.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="all">All Items</button>
+        <button class="tab-btn" data-category="coffee">Espresso & Coffee</button>
+        <button class="tab-btn" data-category="cold">Cold Brews & Tea</button>
+        <button class="tab-btn" data-category="bakery">Fresh Pastries</button>
+        <button class="tab-btn" data-category="snacks">Breakfast & Snacks</button>
+      </div>
+
+      <!-- Dynamic Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Javascript renders menu cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Combo Offers Banner Section -->
+  <section class="offers section-padding" id="offers">
+    <div class="container">
+      <div class="offers-banner">
+        <div class="offers-content">
+          <span class="badge-discount">Save 20% Today</span>
+          <h2>Morning Combo Special</h2>
+          <p>Get any Signature Espresso + Fresh Butter Croissant or Danish for a special bundled price!</p>
+          <div class="combo-price">
+            <span class="old-price">7,500 MMK</span>
+            <span class="new-price">6,000 MMK</span>
+          </div>
+          <button class="btn btn-primary" onclick="addComboToCart()">Add Combo to Cart</button>
+        </div>
+        <div class="offers-img">
+          <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=600&q=80" alt="Coffee and Croissant Combo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Grid -->
+  <section class="gallery section-padding" id="gallery">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Atmosphere & Vibe</span>
+        <h2 class="section-title">Gallery & Moments</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" alt="Cafe Interior"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Pour Over Coffee"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Fresh Bakery Items"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Cozy Cafe Seating"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Latte Art Cup"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=600&q=80" alt="Barista working"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="reservation section-padding" id="reservation">
+    <div class="container">
+      <div class="reservation-card">
+        <div class="res-info">
+          <span class="section-tag light">Book Ahead</span>
+          <h2>Reserve A Table</h2>
+          <p>Planning a work meeting, date night, or casual catchup with friends? Reserve your spot in advance effortlessly.</p>
+          <ul class="res-contact-info">
+            <li><i class="fa-solid fa-location-dot"></i> No. 123, Pyay Road, Kamayut Tsp, Yangon</li>
+            <li><i class="fa-solid fa-phone"></i> +95 9 123 456 789 / +95 1 987 654</li>
+            <li><i class="fa-solid fa-clock"></i> Mon - Sun: 7:00 AM - 9:00 PM</li>
+          </ul>
+        </div>
+        <form class="res-form" id="reservationForm">
+          <div class="form-group">
+            <label for="resName">Full Name</label>
+            <input type="text" id="resName" class="form-control" placeholder="e.g. Aung Aung" required>
+          </div>
+          <div class="form-group">
+            <label for="resPhone">Phone Number</label>
+            <input type="tel" id="resPhone" class="form-control" placeholder="09xxxxxxxxx" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resGuests">Guests</label>
+              <select id="resGuests" class="form-control" required>
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 Persons</option>
+                <option value="4">4 Persons</option>
+                <option value="6">6+ Persons</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="resDate">Date</label>
+              <input type="date" id="resDate" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="resTime">Time Slot</label>
+            <select id="resTime" class="form-control" required>
+              <option value="Morning (8:00 AM - 11:00 AM)">Morning (8:00 AM - 11:00 AM)</option>
+              <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
+              <option value="Evening (5:00 PM - 8:30 PM)">Evening (5:00 PM - 8:30 PM)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="#" class="brand-logo light">
+          <i class="fa-solid fa-mug-hot"></i>
+          Aroma <span>&</span> Artisan
+        </a>
+        <p class="footer-text">Bringing world-class coffee standards and oven-baked pastries at everyday affordable MMK prices.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-viber"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#offers">Special Offers</a></li>
+          <li><a href="#reservation">Table Booking</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <p class="hours-item"><span>Monday - Friday:</span> 7:00 AM - 9:00 PM</p>
+        <p class="hours-item"><span>Saturday - Sunday:</span> 8:00 AM - 10:00 PM</p>
+        <p class="hours-item"><span>Public Holidays:</span> Open All Day</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>&copy; 2026 Aroma & Artisan Cafe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Your Coffee Order</h3>
+      <button class="close-cart" id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-body" id="cartItemsContainer">
+      <!-- Dynamic cart items appear here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Grand Total:</span>
+        <span class="total-amount" id="cartTotal">0 MMK</span>
+      </div>
+      <button class="btn btn-primary btn-block" onclick="checkoutOrder()">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">Item added to your cart!</div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
